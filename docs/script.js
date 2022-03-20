@@ -17,13 +17,13 @@ request.addEventListener("readystatechange", () =>{
         lista = document.getElementById("lista")
         jason.forEach(e => {
             let line = 0
-            lista_string += '<code></code><li><a href="'+ page + e +'" target="blank">'+ e +'</a>'
-            while(line < 50 - e.length){ 
+            lista_string += '<li><a href="'+ page + e +'" target="blank">'+ e +'</a>'
+            while(line < 60 - e.length){ 
                 lista_string += "-"
                 line ++
                 console.log(e)
              }
-            lista_string += '<a href="'+ code + e +'" target="blank">code</a></li</code>'
+            lista_string += '<a href="'+ code + e +'" target="blank">code</a></li>'
             })
         
         lista.innerHTML = lista_string
