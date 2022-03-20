@@ -8,7 +8,7 @@ const page = 'https://porwaltz.github.io/'
 request.open('GET', url)
 request.send()
 
-
+//lorem ipsum
 request.addEventListener("readystatechange", () =>{
     if(request.readyState === 4){
         if(request.status == 200){
