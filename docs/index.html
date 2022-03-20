@@ -18,10 +18,17 @@
     <style>
         #lista  { 
             font-family: monospace;
-            box-sizing: border-box;    
+            box-sizing: border-box;
+            width: fit-content;    
         }
-        li:hover{ background-color: lightgray;}
+        li      { padding: 0.1em 0.5em;}
+        li:hover{ animation: fadeIn 0.2s ease forwards;}
         a       { text-decoration: none; }
+        
+        @keyframes fadeIn {
+            0%      { background-color: white;}
+            100%    { background-color: rgb(224, 224, 224);}
+        }
     </style>
     <script src="script.js"></script>
 </body>
